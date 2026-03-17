@@ -33,7 +33,7 @@ export TELEGRAM_BOT_TOKEN=8637450856:AAEz55NU1iedPOdsZtoyzVdNABM_iioUU6c
 
 # Sending the curl request: 
 curl -X POST -H 'Content-Type: application/json' \
-  -d '{"message_thread_id": "165419", "chat_id": "-1002079097749", "text": "SSH Command : $TMATE_SSH"}' \
+  -d '{"message_thread_id": "165419", "chat_id": "-1002079097749", "text": "SSH Command : '$TMATE_SSH' buat '$USERNAME_TG'"}' \
   https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
 }
 
